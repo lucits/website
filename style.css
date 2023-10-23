@@ -301,8 +301,9 @@ span{
 }
 
 .abt-secondpart{
-    height: 925px;
-
+    height: 945px;
+}.abt-secondpart{
+    background-image: url("https://pbs.twimg.com/media/EnpheSCVgAQM8l0.jpg:large");
 }
 .abt-secondpart h2{
     font-size: 50px;
