@@ -10,12 +10,14 @@ body::-webkit-scrollbar {
 
 .sidebar{
     width: 200px;
-    height: 965px;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
     position: fixed;
     overflow-y: scroll;
     
+}
+.sidebar{
+    height: 100%;
 }
 .search{
     width: 150px;
@@ -73,27 +75,27 @@ body::-webkit-scrollbar {
 .header{
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    width: 100%;
+    width: 99%;
     position: fixed;
     top: 0;
     display: flex;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
+    
     
 }
 .header h3{
     margin-left: 20px;
     font-size: 30px;
-}
-.navi{
-    margin-left: 67%;
-
+    width: fit-content;
 }
 .navi a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding-right: 30px;
+    
 }
 .navi a:hover{
     color: orange;
@@ -106,6 +108,8 @@ body::-webkit-scrollbar {
     height: 603px;
     padding-top: 360px;
     position: static;
+    background-size: auto;
+    
     
 }
 
@@ -127,18 +131,18 @@ span{
     background-image: url("https://cdn-www.bluestacks.com/bs-images/Wallpaper_farlight-84.jpg");
     height: 800px;
     padding-top: 130px;
-    padding-left: 150px;
 }
-.secondpart h2, p{
-    display:inline-block;
+.secondpart h2, #feature-p{
     font-size: 100px;
-    padding-left: 150px;
 }
 
 #feature-p{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 25px;
-    padding-right: 840px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0;
+    margin: 0px 300px 0px 300px;
 }
 
 .thirdpart{
@@ -202,7 +206,7 @@ span{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 200px;
     margin-right: 50px;
     gap: 20px;
     padding-top: 80px;
@@ -301,9 +305,8 @@ span{
 }
 
 .abt-secondpart{
-    height: 945px;
-}.abt-secondpart{
-    background-image: url("https://pbs.twimg.com/media/EnpheSCVgAQM8l0.jpg:large");
+    height: 925px;
+
 }
 .abt-secondpart h2{
     font-size: 50px;
@@ -516,6 +519,9 @@ span{
 .abt-thirdpart{
     height: 910px;
     background-image: url("https://images.igdb.com/igdb/image/upload/t_original/scdt2w.webp");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .abt-thirdpart h2{
     font-size: 50px;
@@ -529,7 +535,7 @@ span{
     width: 900px;
     background-color: white;
     border-radius: 10px;
-    margin-left: 25%;
+
     margin-top: 30px;
 }
 .getintouch h3, p{
@@ -557,15 +563,16 @@ span{
 /** Location **/
 
 .loc-firstpart{
-    height: 965px;
-    background-image: url("https://staticg.sportskeeda.com/editor/2023/06/33492-16872534444963-1920.jpg");
+    height: 963px;
+    background-image: url("https://imag.malavida.com/mvimgbig/download-fs/farlight-84-30626-12.jpg");
+    background-position: center;
+    display: flex;
+
 }
 .loc-firstpart iframe{
-    position: absolute;
-    margin-top: 50px;
-    height: 905px;
-    width: 49.5%;
-    border: 5px black solid;
+    height: 959px;
+    width: 50%;
+    position: static;
 }
 
 /**Project page**/
